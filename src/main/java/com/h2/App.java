@@ -1,14 +1,9 @@
 package com.h2;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println("");
     }
 
     public static int doubleTheNumber(int number) {
@@ -18,17 +13,12 @@ public class App
     private static int add(int[] numbers) {
         int sum = 1;
 
-        for (int i = 0; i < numbers.length ; i++) {
-            sum = sum + numbers[i];
+        for (int number : numbers) {
+            sum = sum + number;
         }
 
         return sum;
     }
 
 }
-
-/*
-
- */
-
 

@@ -1,24 +1,7 @@
 package com.h2;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
-
-    /*
-
-    Navigate to the line in the main() method where you printed "Hello " with the user name. Right after that,
-    print another line using System.out.println() that says "Enter the loan term (in years)".
-    Then, call the nextInt() method on scanner variable. Save the value received into a new variable called loanTermInYears.
-    The type of this variable must be int since scanner.nextInt() returns an int.
-
-    Then, call the getRates() method and pass loanTermInYears as the argument. Save the received value into a variable called bestRate.
-    The variable must be of type float since getRates() returns a value of type float.
-
-
-
-
-     */
 
 public class BestLoanRates {
 
@@ -47,18 +30,6 @@ public class BestLoanRates {
         }
 
         scanner.close();
-
-
-        /*
-        Now, if the value of bestRate is 0.0f, print "No available rates for term: " + loanTermInYears + " years" (using System.out.println()).
-        Otherwise, print "Best Available Rate: " + getRates(loanTermInYears) + "%".
-        Read more about the float comparisons in java at this Stack Overflow page on comparing floats.
-
-        Finally, call the close() method on scanner.
-         */
-
-
-
     }
 
     public static float getRates(int loanTermInYears){
