@@ -8,10 +8,27 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println("");
     }
 
     public static int doubleTheNumber(int number) {
-        return -1;
+        return number * 2;
     }
+
+    private static int add(int[] numbers) {
+        int sum = 1;
+
+        for (int i = 0; i < numbers.length ; i++) {
+            sum = sum + numbers[i];
+        }
+
+        return sum;
+    }
+
 }
+
+/*
+
+ */
+
+

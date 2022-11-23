@@ -251,6 +251,9 @@ public class Module2_Test {
                 .filter(m -> m.getName().equals(main))
                 .collect(Collectors.toList());
 
+        System.out.println("Hello World!");
+
+
         assertEquals(1, methods.size(), main + " must be defined as a method in " + c.getCanonicalName());
         {
             final String name = "H2";
